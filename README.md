@@ -95,16 +95,16 @@ terraform apply
 
     terraform show
 
-### 9. Test EC2 Instance
+### 9. Test EC2 InstancE
 
-    Connect to the instance via SSH:
-```
+ Connect to the instance via SSH:
+
     ssh -i /path/to/your-key.pem ec2-user@<EC2-Public-IP>
-    ```
 
-    Open a browser and access the instance's public IP to verify the NGINX server (if configured).
+Open a browser and access the instance's public IP to verify the NGINX server (if configured).
 
-# 10. Clean Up Resources
+
+## 10. Clean Up Resources
 
 To avoid incurring unnecessary charges, destroy all created resources:
 
