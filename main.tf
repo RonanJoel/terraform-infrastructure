@@ -3,13 +3,13 @@ provider "aws" {
 }
 
 module "ec2_instance" {
-  source          = "./modules"
-  ami_id          = var.ami_id
-  instance_type   = var.instance_type
+  source        = "./modules/ec2_instance"  # Asegúrate de que la ruta sea correcta
+  ami_id        = var.ami_id
+  instance_type = var.instance_type
 }
 
 module "s3_bucket" {
-  source        = "./modules"
+  source        = "./modules/s3_bucket"  # Ruta correcta del módulo
   bucket_name   = var.bucket_name
   environment   = var.environment
 }
